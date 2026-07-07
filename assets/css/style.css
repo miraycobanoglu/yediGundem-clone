@@ -1,0 +1,290 @@
+/* ==========================================================
+   RESET
+========================================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================
+   HTML
+========================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==========================================================
+   BODY
+========================================================== */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================
+   MEDIA
+========================================================== */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* ==========================================================
+   FORM ELEMENTS
+========================================================== */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+/* ==========================================================
+   LINK
+========================================================== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==========================================================
+   LIST
+========================================================== */
+ul,
+ol {
+  list-style: none;
+}
+
+/* ==========================================================
+   TABLE
+========================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==========================================================
+   HEADING
+========================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ==========================================================
+   PARAGRAPH
+========================================================== */
+p {
+  overflow-wrap: break-word;
+}
+
+/* ==========================================================
+   QUOTES
+========================================================== */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+/* ==========================================================
+   HR
+========================================================== */
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+::selection {
+  background: #222;
+  color: #fff;
+}
+
+/* ==========================================================
+   SCROLLBAR (Chrome)
+========================================================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: rgba(239, 237, 237, 0.3882352941);
+  padding: 60px 0;
+}
+.header__news {
+  padding: 0 25px;
+}
+.header__news .news-title1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+.header__news .news-title2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 200;
+}
+.header__news .news-logo {
+  float: right;
+}
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #aeadad;
+  border-right: 2px solid #aeadad;
+  padding: 3rem 2rem;
+}
+.header__logo a {
+  text-decoration: none;
+  color: inherit;
+}
+.header__logo .logo-text {
+  font-size: 5rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.header__logo .logo-text:after {
+  left: 50%;
+  bottom: -7px;
+  width: 250px;
+  height: 1px;
+  content: "";
+  -webkit-transition: all 0.13s;
+  transition: all 0.13s;
+  margin-left: -125px;
+  position: absolute;
+  background-color: #aeadad;
+}
+.header__logo .logo-text:hover::after {
+  background-color: #222;
+  width: 100%;
+  margin-left: 0;
+  left: 0%;
+}
+.header__logo .tarih {
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  color: #222;
+  font-weight: 500;
+}
+.header__weather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: "Roboto", serif;
+  gap: 1rem;
+  padding: 2rem;
+}
+.header__weather .location-select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 18px;
+}
+.header__weather .location-select select {
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+.header__weather .location-select span {
+  color: #999;
+  font-weight: 600;
+}
+.header__weather .time {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 20px;
+}
+.header__weather .time .time-duration {
+  font-weight: 700;
+}
+.header__weather .weather-degree {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header__weather .weather-degree .degree {
+  font-size: 50px;
+  font-weight: bold;
+}
+.header__weather .weather-degree i {
+  font-size: 2.5rem;
+}
+.header__weather .weather-description .description {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+{
+  "name": "yedigundem-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "sass": "sass --watch scss/style.scss assets/css/style.css"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miraycobanoglu/yediGundem-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miraycobanoglu/yediGundem-clone/issues"
+  },
+  "homepage": "https://github.com/miraycobanoglu/yediGundem-clone#readme",
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+}
