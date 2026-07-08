@@ -1,0 +1,100 @@
+@use "veriables";
+@use "responsive";
+
+.category { 
+
+    display: flex;
+
+    border-top: 3px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    background: #dedede74;
+
+       @include responsive.responsive(lg) {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            }
+
+    &__item {
+
+        flex: 1;
+
+        position: relative;
+
+        padding: 2rem 2rem;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        transition: .25s ease;
+
+        &:hover {
+            background: #9494941f;
+
+
+            &::before {
+                content: "";
+                position: absolute;
+
+                top: 0;
+                left: 0;
+
+                width: 100%;
+                height: 3px;
+
+                background: #666;
+
+            }
+
+        }
+            @include responsive.responsive(lg) {
+            padding:10px;
+            }
+
+    }
+
+    &__title {
+
+        position: relative;
+
+        display: inline-block;
+
+        margin-bottom: 2rem;
+
+        font-size: 1.6rem;
+        font-weight: 700;
+
+        &::after {
+
+            content: " ";
+
+            position: absolute;
+
+            left: 50%;
+            bottom: -8px;
+
+            width: 100px;
+            height: 1.2px;
+
+            transform: translateX(-50%);
+             -webkit-transition: all 0.13s;
+                transition: all 0.13s;
+
+            background-color: veriables.$primary;
+
+        }
+
+
+    }
+
+    &__text {
+        font-family:veriables.$font-news;
+        font-size: 1.3rem;
+        line-height: 1.6;
+        font-weight:300;
+
+    }
+
+ }

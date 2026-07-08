@@ -1,4 +1,5 @@
 @use "veriables";
+@use "responsive";
 
 .header {
     display: grid;
@@ -6,6 +7,13 @@
     align-items: center;
     background-color: veriables.$background;
     padding: 60px 0;
+
+    @include responsive.responsive(lg) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 2rem;
+            padding:0px;
+            }
 
     &__news {
         padding:0 25px;
@@ -26,6 +34,11 @@
         
 
         }
+            @include responsive.responsive(lg) {
+            display:none;
+            
+            }
+
     }
 
     &__logo {
@@ -39,6 +52,10 @@
 
         padding: 3rem 2rem;
 
+        @include responsive.responsive(lg) {
+            border:none;
+         }
+
         a {
             text-decoration: none;
             color: inherit;
@@ -51,6 +68,13 @@
             line-height: 1;
             margin-bottom: 1.5rem;
             position: relative;
+
+              @include responsive.responsive(xl) {
+                font-size: 3.5rem;
+                }
+                @include responsive.responsive(lg) {
+                font-size: 3rem;
+                }
 
                 &:after {
                 left: 50%;
@@ -79,6 +103,7 @@
             color: veriables.$primary;
             font-weight: 500;
         }
+        
     }
 
     &__weather {
@@ -165,6 +190,9 @@
             }
 
         }
+             @include responsive.responsive(lg) {
+            display:none;
+            }
 
     }
 

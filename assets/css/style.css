@@ -166,6 +166,14 @@ hr {
   background-color: rgba(239, 237, 237, 0.3882352941);
   padding: 60px 0;
 }
+@media (max-width: 992px) {
+  .header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+    padding: 0px;
+  }
+}
 .header__news {
   padding: 0 25px;
 }
@@ -183,6 +191,11 @@ hr {
 .header__news .news-logo {
   float: right;
 }
+@media (max-width: 992px) {
+  .header__news {
+    display: none;
+  }
+}
 .header__logo {
   display: flex;
   flex-direction: column;
@@ -191,6 +204,11 @@ hr {
   border-left: 2px solid #aeadad;
   border-right: 2px solid #aeadad;
   padding: 3rem 2rem;
+}
+@media (max-width: 992px) {
+  .header__logo {
+    border: none;
+  }
 }
 .header__logo a {
   text-decoration: none;
@@ -203,6 +221,16 @@ hr {
   line-height: 1;
   margin-bottom: 1.5rem;
   position: relative;
+}
+@media (max-width: 1200px) {
+  .header__logo .logo-text {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .header__logo .logo-text {
+    font-size: 3rem;
+  }
 }
 .header__logo .logo-text:after {
   left: 50%;
@@ -280,11 +308,81 @@ hr {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media (max-width: 992px) {
+  .header__weather {
+    display: none;
+  }
+}
 
 .container {
-  max-width: 1500px;
+  max-width: 1700px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0 20px;
+}
+
+.category {
+  display: flex;
+  border-top: 3px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: rgba(222, 222, 222, 0.4549019608);
+}
+@media (max-width: 992px) {
+  .category {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+}
+.category__item {
+  flex: 1;
+  position: relative;
+  padding: 2rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.category__item:hover {
+  background: rgba(148, 148, 148, 0.1215686275);
+}
+.category__item:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #666;
+}
+@media (max-width: 992px) {
+  .category__item {
+    padding: 10px;
+  }
+}
+.category__title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.category__title::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 100px;
+  height: 1.2px;
+  transform: translateX(-50%);
+  -webkit-transition: all 0.13s;
+  transition: all 0.13s;
+  background-color: #222;
+}
+.category__text {
+  font-family: "Roboto", serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
