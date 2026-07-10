@@ -74,9 +74,9 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  background-color: veriables.$background ;
   height:100%;
   width:100%;
+  background:veriables.$background ;
 
     @include responsive.responsive(lg) {
         display: none;
@@ -88,6 +88,7 @@
     width: 400px;
     height:350px;
     cursor:pointer;
+    padding:20px 20px;
   }
 }
  }

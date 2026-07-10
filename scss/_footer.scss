@@ -1,0 +1,19 @@
+@use "veriables";
+
+.section-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: veriables.$background;
+    padding:30px;
+
+}
+
+.footer-text{
+    font-size:35px;
+    font-weight:900;
+
+    &:hover{
+        color:veriables.$footer;
+    }
+}
