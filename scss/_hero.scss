@@ -14,7 +14,8 @@
             gap: 30px;
             }
 
-    &__left {
+    &__left { 
+    height: 100%; 
         .news-card__title {
             font-size: 40px;
             font-weight: bold;
@@ -34,9 +35,10 @@
             margin-top:20px;
             line-height: 1.5;
             display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 15;
-            overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 10;
+        overflow: hidden;
+        text-overflow: ellipsis;
 }
 .news-card__desc p + p {
             margin-top: 30px;
@@ -51,6 +53,9 @@
                 text-decoration-thickness: 0.5px;
                 text-underline-offset: 4px;
                 font-family: veriables.$font-news;
+                
+                margin-top: auto; 
+        display: inline-block;
 
                 &:hover {
                     transition: all 0.3s ease;

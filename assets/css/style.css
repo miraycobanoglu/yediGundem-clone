@@ -328,6 +328,9 @@ hr {
     gap: 30px;
   }
 }
+.hero__left {
+  height: 100%;
+}
 .hero__left .news-card__title {
   font-size: 40px;
   font-weight: bold;
@@ -346,8 +349,9 @@ hr {
   line-height: 1.5;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 15;
+  -webkit-line-clamp: 10;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .hero__left .news-card__desc p + p {
   margin-top: 30px;
@@ -361,6 +365,8 @@ hr {
   text-decoration-thickness: 0.5px;
   text-underline-offset: 4px;
   font-family: "Roboto", serif;
+  margin-top: auto;
+  display: inline-block;
 }
 .hero__left .news-card__link:hover {
   transition: all 0.3s ease;

@@ -1,0 +1,144 @@
+{
+  "Pazartesi": {
+    "header": {
+      "ad_title1": "Hayatın her anında, Haber7 yanında!",
+      "ad_title2": "Haber7 mobil uygulamaları ile Türkiye gündemini yakından takip edebilirsiniz!",
+      "ad_logo": "https://i12.haber7.net/assets/v2/common/images/haber7.png"
+    },
+    "categories": [
+      { "title": "Güncel", "text": "Yeni haftada ulaşım projeleri hız kesmeden devam ediyor." },
+      { "title": "Spor", "text": "Milli sporcularımızdan yeni haftada rekor üstüne rekor." },
+      { "title": "Ekonomi", "text": "Piyasalar yeni haftanın ilk gününe hareketli başladı." },
+      { "title": "Yaşam", "text": "İstanbul'da bu hafta sonu yapılacak en iyi kültürel etkinlikler." }
+    ],
+    "hero_news": {
+      "left": {
+        "title": "Haftanın İlk Gününden Yoğun Trafik Önlemleri!",
+        "desc1": "Pazartesi sabahı işe gidiş saatlerinde köprülerde yeni şerit düzenlemesine gidildi.",
+        "desc2": "Yetkililer, sürücülerin alternatif rotaları kullanmalarını tavsiye etti.Yetkililer, sürücülerin alternatif rotaları kullanmalarını tavsiye etti.Yetkililer, sürücülerin alternatif rotaları kullanmalarını tavsiye etti.Yetkililer, sürücülerin alternatif rotaları kullanmalarını tavsiye etti.Yetkililer, sürücülerin alternatif rotaları kullanmalarını tavsiye etti.Yetkililer, sürücülerin alternatif rotaları kullanmalarını tavsiye etti.Yetkililer, sürücülerin alternatif rotaları kullanmalarını tavsiye etti.Yetkililer, sürücülerin alternatif rotaları kullanmalarını tavsiye etti."
+      },
+      "center": {
+        "title": "Büyük Keşif! Tarihi Eser Kaçakçılarına Dev Operasyon",
+        "desc": "Güvenlik güçlerinin sabah saatlerinde düzenlediği eş zamanlı operasyonlarda paha biçilemez binlerce tarihi eser ele geçirildi.",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80"
+      },
+      "right": {
+        "title": "Kabine Toplantısı Bugün Toplanıyor: Gündem Yoğun",
+        "desc1": "Cumhurbaşkanlığı Külliyesi'ndeki toplantıda ekonomi ve iç politika başlıkları masaya yatırılacak.",
+        "desc2": "Toplantının ardından millete sesleniş konuşması yapılması bekleniyor.Toplantının ardından millete sesleniş konuşması yapılması bekleniyor.Toplantının ardından millete sesleniş konuşması yapılması bekleniyor.Toplantının ardından millete sesleniş konuşması yapılması bekleniyor.Toplantının ardından millete sesleniş konuşması yapılması bekleniyor.Toplantının ardından millete sesleniş konuşması yapılması bekleniyor.Toplantının ardından millete sesleniş konuşması yapılması bekleniyor.Toplantının ardından millete sesleniş konuşması yapılması bekleniyor.Toplantının ardından millete sesleniş konuşması yapılması bekleniyor."
+      }
+    },
+    "highlights": [
+      { "title": "Eski Belediye Başkanı anıldı", "desc": "Geçtiğimiz günlerde vefat eden belediye başkanı için anma töreni düzenlendi." },
+      { "title": "Geleneksel festivale yoğun ilgi", "desc": "Bu yıl 10. su düzenlenen kültür festivali renkli görüntülere sahne oldu." }
+    ],
+    "section_bottom": {
+      "article": {
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80",
+        "title": "Beyaz Saray'dan Ayrılırken Dikkat Çeken Detay!",
+        "desc": "Resmi temaslarını tamamlayan heyet, havaalanına doğru hareket ederken güvenlik protokollerinde son dakika değişikliği yapıldı."
+      },
+      "featured": {
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80",
+        "title": "Temsilcimizin Avrupa Sahnesindeki Rakipleri Belli Oldu!",
+        "desc": "Yapılan kura çekiminin ardından gruplardaki eşleşmeler netleşti."
+      }
+    }
+  },
+  "Salı": {
+    "header": {
+      "ad_title1": "Hayatın her anında, Haber7 yanında!",
+      "ad_title2": "Haber7 mobil uygulamaları ile Türkiye gündemini yakından takip edebilirsiniz!",
+      "ad_logo": "https://i12.haber7.net/assets/v2/common/images/haber7.png"
+    },
+    "categories": [
+      { "title": "Güncel", "text": "Fransa Cumhurbaşkanı Macron Ankara'da resmi temaslara başladı." },
+      { "title": "Spor", "text": "Galatasaray'ın Şampiyonlar Ligi rakipleri netleşti." },
+      { "title": "Ekonomi", "text": "Piyasalarda döviz kurundaki yatay seyir sürüyor." },
+      { "title": "Yaşam", "text": "Geleneksel Türk kahvaltısı dünya basınında manşet oldu." }
+    ],
+    "hero_news": {
+      "left": {
+        "title": "Macron’un Ankara'daki koşu arkadaşı sosyal medyayı salladı! Bakın o isim kim çıktı!",
+        "desc1": "NATO Zirvesi kapsamında Ankara'da bulunan Fransa Cumhurbaşkanı Emmanuel Macron, sabah saatlerinde Seğmenler Parkı'nda koşu yaptı.",
+        "desc2": "Macron'a, Cumhurbaşkanı Recep Tayyip Erdoğan'ın Fransızca tercümanı Hamza Gedikoğlu eşlik etti."
+      },
+      "center": {
+        "title": "İran son dakika duyurdu! Ölen asker sayısı açıklandı! ABD'den peş peşe kanlı saldırılar",
+        "desc": "Son dakika haberi... İran’ın resmi haber ajansı IRNA, ABD ordusunun bu gece düzenlediği katliam saldırılarında 8 İran askerinin öldüğünü duyurdu.",
+        "image": "images/hero.jpg"
+      },
+      "right": {
+        "title": "Cumhurbaşkanı Erdoğan'dan F-35 açıklaması: Netanyahu ve Miçotakis'e sert tepki!",
+        "desc1": "Cumhurbaşkanı Erdoğan, Netanyahu ve Miçotakis'in F-35 açıklamasıyla ilgili sert konuştu.",
+        "desc2": "Cumhurbaşkanı Recep Tayyip Erdoğan, NATO Ankara Zirvesi'ne ilişkin basın toplantısı düzenledi."
+      }
+    },
+    "highlights": [
+      { "title": "Bandırma eski Belediye Başkanı Öztaylan vefat etti", "desc": "Bandırma eski Belediye Başkanı Mehmet Cemal Öztaylan, Ankara’da tedavi gördüğü hastanede hayatını kaybetti." },
+      { "title": "Türk kahvaltısına hayran kaldılar", "desc": "Yabancı turist heyeti İstanbul'daki kahvaltı kültürüne tam not verdi." }
+    ],
+    "section_bottom": {
+      "article": {
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80",
+        "title": "Trump'tan Ankara'dan ayrılırken gizemli hamle! Açıkladığı gerekçe şaşırttı...",
+        "desc": "ABD Başkanı Donald Trump, NATO Zirvesi için Ankara'ya Katar'ın hediye ettiği yeni Air Force One ile geldi. Ancak Türkiye'den ayrılırken eski başkanlık uçağını tercih etti."
+      },
+      "featured": {
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80",
+        "title": "Galatasaray’ın Şampiyonlar Ligi'ndeki rakipleri belli oldu!",
+        "desc": "FIBA Şampiyonlar Ligi'nde kura çekimi büyük bir heyecanla tamamlandı..."
+      }
+    }
+  },
+  "Çarşamba": {
+    "header": {
+      "ad_title1": "Hayatın her anında, Haber7 yanında!",
+      "ad_title2": "Haber7 mobil uygulamaları ile Türkiye gündemini yakından takip edebilirsiniz!",
+      "ad_logo": "https://i12.haber7.net/assets/v2/common/images/haber7.png"
+    },
+    "categories": [
+      { "title": "Güncel", "text": "Teknoloji dünyası bu akşamki büyük lansmana kilitlendi." },
+      { "title": "Spor", "text": "Dev derbinin biletleri çarşamba sabahı satışa çıkıyor." },
+      { "title": "Ekonomi", "text": "Altın fiyatları rekor tazeleyerek güne başladı." },
+      { "title": "Yaşam", "text": "Doğal yaşam alanlarını korumak için yeni kampanya başlatıldı." }
+    ],
+    "hero_news": {
+      "left": {
+        "title": "Yapay Zeka Eğitim Sistemine Entegre Ediliyor",
+        "desc1": "Bakanlık, yeni müfredatta yapay zeka okuryazarlığı derslerine yer verileceğini açıkladı.",
+        "desc2": "Pilot bölgelerde uygulamalar bu dönem başlıyor."
+      },
+      "center": {
+        "title": "Otomotiv Devinden Türkiye'ye Dev Yatırım Kararı!",
+        "desc": "Dünyaca ünlü otomobil üreticisi, yeni nesil elektrikli araç fabrikasını kurmak için Türkiye'yi seçtiğini resmen duyurdu.",
+        "image": "images/hero-carsamba.jpg"
+      },
+      "right": {
+        "title": "Merkez Bankası Faiz Kararını Açıkladı!",
+        "desc1": "Piyasaların merakla beklediği faiz kararı bugün saat 14:00'te kamuoyuyla paylaşıldı.",
+        "desc2": "Karar sonrası döviz kurlarında yatay seyir sürüyor."
+      }
+    },
+    "highlights": [
+      { "title": "Bilim insanlarından kanser tedavisinde yeni umut", "desc": "Laboratuvar ortamında yapılan testlerde tümör hücrelerini yok eden yeni bir molekül keşfedildi." },
+      { "title": "Karaköy sahil hattı yenileniyor", "desc": "Belediye, yayaların yürüyüş alanlarını genişletmek için projeyi başlattı." }
+    ],
+    "section_bottom": {
+      "article": {
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80",
+        "title": "Küresel Zirve Sonrası Liderlerden Ortak Bildiri",
+        "desc": "Çevre ve iklim krizine karşı atılacak somut adımların yer aldığı 10 maddelik bildiri bu sabah imzalandı."
+      },
+      "featured": {
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80",
+        "title": "Potada Heyecan Başlıyor: İlk Maç Deplasmanda",
+        "desc": "Temsilcimiz turnuvanın açılış mücadelesi için bu akşam sahaya çıkıyor."
+      }
+    }
+  },
+  "Perşembe": { "copy_from": "Salı" },
+  "Cuma": { "copy_from": "Pazartesi" },
+  "Cumartesi": { "copy_from": "Çarşamba" },
+  "Pazar": { "copy_from": "Salı" }
+}
