@@ -25,7 +25,7 @@ function updateCountdownToNoon() {
  */
 async function fetchLiveWeatherByCityName(cityName = "İstanbul") {
     try {
-        // A. Şehir adından koordinatları (enlem/boylam) API ile dinamik olarak çekiyoruz
+        // Şehir adından koordinatları (enlem/boylam) API ile dinamik olarak çekiyoruz
         const geocodingUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(cityName)}&count=1&language=tr&format=json`;
         const geoResponse = await fetch(geocodingUrl);
         if (!geoResponse.ok) throw new Error("Coğrafi veri alınamadı.");
@@ -38,7 +38,7 @@ async function fetchLiveWeatherByCityName(cityName = "İstanbul") {
 
         const { latitude, longitude } = geoData.results[0];
 
-        // B. Bu koordinatlarla gerçek zamanlı hava durumunu sorguluyoruz
+        // Bu koordinatlarla gerçek zamanlı hava durumunu sorguluyoruz
         const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code&timezone=Europe%2FIstanbul`;
         const weatherResponse = await fetch(weatherUrl);
         if (!weatherResponse.ok) throw new Error("Hava durumu verisi alınamadı.");
@@ -47,7 +47,7 @@ async function fetchLiveWeatherByCityName(cityName = "İstanbul") {
         const currentTemp = Math.round(weatherData.current.temperature_2m);
         const wCode = weatherData.current.weather_code;
 
-        // C. WMO kodlarına göre durum metni ve FontAwesome ikon sınıfı belirleme
+        // WMO kodlarına göre durum metni ve FontAwesome ikon sınıfı belirleme
         let desc = "Açık";
         let iconClass = "fa-sun";
 
@@ -68,7 +68,7 @@ async function fetchLiveWeatherByCityName(cityName = "İstanbul") {
             iconClass = "fa-cloud-showers";
         }
 
-        // D. HTML'deki elemanları seçip verileri basıyoruz
+        //  HTML'deki elemanları seçip verileri basıyoruz
         const weatherSec = document.querySelector('.header__weather');
         if (weatherSec) {
             const degreeEl = weatherSec.querySelector('.degree');
@@ -87,7 +87,7 @@ async function fetchLiveWeatherByCityName(cityName = "İstanbul") {
     }
 }
 
-/**
+/*
  * 3. ŞEHİR SEÇİM KUTUSU (SELECT) DİNLEYİCİSİ
  */
 function initCitySelector() {
@@ -107,7 +107,7 @@ function fetchLiveWeatherByWeatherCityName(name) {
     fetchLiveWeatherByCityName(name);
 }
 
-/**
+/*
  * 4. SİSTEM TARİHİNİ AYARLAMA VE GÜNÜ BAŞ HARFİ BÜYÜK DÖNDÜRME
  * JSON dosyasındaki "Pazartesi", "Salı" gibi büyük harfli yapıyla eşleşir.
  */
@@ -123,13 +123,13 @@ function initLiveDate() {
     return rawDay.charAt(0).toUpperCase() + rawDay.slice(1);
 }
 
-/**
- * 5. SENİN YENİ JSON YAPINA GÖRE TÜM HABERLERİ BASAN TEK MOTOR (DÜZELTİLDİ)
+/*
+ * 5.JSON YAPINA GÖRE TÜM HABERLERİ BASAN TEK MOTOR
  */
 function renderSiteContent(activeData) {
     if (!activeData) return;
 
-    // --- A. ANA MANŞET ALANI (HERO NEWS) ---
+    // --- ANA MANŞET ALANI (HERO NEWS) ---
     const heroLeft = document.querySelector('.hero__left');
     const heroCenter = document.querySelector('.hero__center');
     const heroRight = document.querySelector('.hero__right');
@@ -178,7 +178,7 @@ function renderSiteContent(activeData) {
         }
     }
 
-    // --- B. KATEGORİLER ALANI (CATEGORIES) ---
+    // --- KATEGORİLER ALANI (CATEGORIES) ---
     const categoryElements = document.querySelectorAll('.category__item'); 
     if (categoryElements.length > 0 && activeData.categories) {
         activeData.categories.forEach((cat, index) => {
@@ -191,10 +191,10 @@ function renderSiteContent(activeData) {
         });
     }
 
-    // --- C. ÖNE ÇIKANLAR / GÜNDEM (HIGHLIGHTS) ---
+    // --- ÖNE ÇIKANLAR / GÜNDEM (HIGHLIGHTS) ---
     const highlightsContainer = document.querySelector('.one-cikanlar-left__news');
     if (highlightsContainer && activeData.highlights) {
-        highlightsContainer.innerHTML = ''; // Eski statik içeriği temizle
+        highlightsContainer.innerHTML = ''; 
         activeData.highlights.forEach((high) => {
             const highlightHtml = `
                 <div>
@@ -206,7 +206,7 @@ function renderSiteContent(activeData) {
         });
     }
 
-    // --- D. EN ALT BÖLÜM (SECTION BOTTOM - TRUMP & GALATASARAY) ---
+    // --- EN ALT BÖLÜM (SECTION BOTTOM - TRUMP & GALATASARAY) ---
     const sectionBottom = document.querySelector('.section-bottom');
     if (sectionBottom && activeData.section_bottom) {
         // Trump Haberi (article)
@@ -234,7 +234,7 @@ function renderSiteContent(activeData) {
         }
     }
 
-    // --- E. REKLAM / HEADER YAZILARI ---
+    // --- REKLAM / HEADER YAZILARI ---
     if (activeData.header) {
         const adTitle1El = document.querySelector('.news-title1');
         const adTitle2El = document.querySelector('.news-title2');
@@ -246,11 +246,11 @@ function renderSiteContent(activeData) {
     }
 }
 
-/**
+/*
  * 6. ANA SİSTEM BAŞLATICI
  */
 async function initializeApp() {
-    const currentDay = initLiveDate(); // Bugünün gününü baş harfi büyük verir: Örn: "Pazartesi"
+    const currentDay = initLiveDate(); 
     const defaultCityName = initCitySelector();
     
     await fetchLiveWeatherByCityName(defaultCityName);
@@ -263,13 +263,11 @@ async function initializeApp() {
 
         let todayData = allData[currentDay];
 
-        // "copy_from" Yönlendirme Kontrolü (Perşembe, Cuma vb. boş olan günler için)
         if (todayData && todayData.copy_from) {
             const targetDay = todayData.copy_from; 
             todayData = allData[targetDay];
         }
 
-        // Eğer tamamen tanımsız kalırsa ilk günü (Pazartesi) yedek seçer
         if (!todayData) {
             todayData = allData["Pazartesi"];
         }
